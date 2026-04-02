@@ -5,21 +5,21 @@
 class WzjkCli < Formula
   desc "CLI tool for wzjk"
   homepage "https://gitee.com/sandaka/wzjk-cli"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sandakacn/wzjk-cli/releases/download/v1.0.2/wzjk-cli-Darwin-x86_64.tar.gz"
-      sha256 "e248b11ea049a442f25a565f47c57f8c119bda2a09bfc60588e222aa13a3c11a"
+      url "https://github.com/sandakacn/wzjk-cli/releases/download/v1.0.3/wzjk-cli-Darwin-x86_64.tar.gz"
+      sha256 "366be61b67db6eccf59e255229e6542c711f55d5832533d1b7efe3c8db41e781"
 
       define_method(:install) do
         bin.install "wzjk-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sandakacn/wzjk-cli/releases/download/v1.0.2/wzjk-cli-Darwin-aarch64.tar.gz"
-      sha256 "3648c24d56f5abae5c705d63c5aa96009597313e51f14f62b1cac97745141b73"
+      url "https://github.com/sandakacn/wzjk-cli/releases/download/v1.0.3/wzjk-cli-Darwin-aarch64.tar.gz"
+      sha256 "198ffb5eb2b08ab6c777a10c07134121acddcc890221391301da125061fafb05"
 
       define_method(:install) do
         bin.install "wzjk-cli"
@@ -29,15 +29,15 @@ class WzjkCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandakacn/wzjk-cli/releases/download/v1.0.2/wzjk-cli-Linux-x86_64.tar.gz"
-      sha256 "03373238afb5610988040be237f0f57591b2e9bb8014c44310d540582bd7041a"
+      url "https://github.com/sandakacn/wzjk-cli/releases/download/v1.0.3/wzjk-cli-Linux-x86_64.tar.gz"
+      sha256 "b6b5b5d6f08f5867ce2aeb354a22a17b3f4a8ba088f44192b169462ea149c4ca"
       define_method(:install) do
         bin.install "wzjk-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandakacn/wzjk-cli/releases/download/v1.0.2/wzjk-cli-Linux-aarch64.tar.gz"
-      sha256 "d57470dd97696ea0dc6008587d4dbcc479b8b823c70ae7ac9e139a4fc7a6ff63"
+      url "https://github.com/sandakacn/wzjk-cli/releases/download/v1.0.3/wzjk-cli-Linux-aarch64.tar.gz"
+      sha256 "7322b8fc345cfc88add06d62de24bc1739c86102ae2f7aaec845d8735a7766fa"
       define_method(:install) do
         bin.install "wzjk-cli"
       end
